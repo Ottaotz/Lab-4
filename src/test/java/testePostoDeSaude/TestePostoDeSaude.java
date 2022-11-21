@@ -22,28 +22,16 @@ public class TestePostoDeSaude {
         Comparator<Paciente> comparadorPoridade = new PacienteComparator();
         PriorityQueue<Paciente> filaDePacientes = new PriorityQueue<>(6, comparadorPoridade);
 
-        Paciente p1 = new Paciente("Otto", 18, "01");
-        Paciente p2 = new Paciente("Festa", 19, "02");
-        Paciente p3 = new Paciente("Thomaz", 22, "03");
-        Paciente p4 = new Paciente("Beatriz", 19, "04");
-        Paciente p5 = new Paciente("Festa", 19, "05");
-        Paciente p6 = new Paciente("Ma", 14, "06");
-        Paciente p7 = new Paciente("Augusto", 67, "07");
-        Paciente p8 = new Paciente("Turing", 110, "08");
-        Paciente p9 = new Paciente("Jay Mello", 40, "09");
-        Paciente p10 = new Paciente("Akko", 16, "10");
-
-        filaDePacientes.add(p1);
-        filaDePacientes.add(p2);
-        filaDePacientes.add(p3);
-        filaDePacientes.add(p4);
-        filaDePacientes.add(p5);
-        filaDePacientes.add(p6);
-        filaDePacientes.add(p7);
-        filaDePacientes.add(p8);
-        filaDePacientes.add(p9);
-        filaDePacientes.add(p10);
-
+        filaDePacientes.add(new Paciente("Otto", 18, "01"));
+        filaDePacientes.add(new Paciente("Festa", 19, "02"));
+        filaDePacientes.add(new Paciente("Thomaz", 22, "03"));
+        filaDePacientes.add(new Paciente("Beatriz", 19, "04"));
+        filaDePacientes.add(new Paciente("Festa", 19, "05"));
+        filaDePacientes.add(new Paciente("Ma", 14, "06"));
+        filaDePacientes.add(new Paciente("Augusto", 67, "07"));
+        filaDePacientes.add(new Paciente("Turing", 110, "08"));
+        filaDePacientes.add(new Paciente("Jay Mello", 40, "09"));
+        filaDePacientes.add(new Paciente("Akko", 16, "10"));
 
         Fila fila = new Fila(filaDePacientes);
 
